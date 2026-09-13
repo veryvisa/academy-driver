@@ -390,6 +390,8 @@ img { max-width: 100%; }
 .bp-legend i { display: inline-block; width: 9px; height: 9px; border-radius: 2px; margin-right: 6px; }
 
 /* 表格 */
+/* 宽表不许在手机上撑破页面：渲染器给每张表外包 .table-scroll（render 门验每张表都有） */
+.table-scroll{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
 table.cx { width: 100%; border-collapse: collapse; font-size: var(--vv-fs-sm); }
 table.cx th, table.cx td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--vv-border); }
 table.cx th { color: var(--vv-text-muted); font-weight: var(--vv-w-medium); font-size: var(--vv-fs-xs); }
