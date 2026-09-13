@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>讲解 · 微出国 · 学</title>
+<link rel="stylesheet" href="../assets/style.css?v=1789230898">
+
+<link rel="manifest" href="../manifest.webmanifest">
+</head>
+<body class="vv">
+<header class="vv-header">
+  <a class="vv-brand" href="../index.html"><svg viewBox="102.305 90.391 73.617 59.957" width="28" aria-hidden="true" class="mark">
+<path fill="#30D9C4" d="M 107.894531 95.808594 L 127.277344 95.808594 C 127.277344 95.808594 129.507812 95.628906 130.835938 97.679688 C 131.585938 98.910156 131.65625 100.316406 131.082031 101.546875 L 121.609375 117.953125 C 121.609375 117.953125 120.335938 120.65625 117.011719 120.824219 C 113.714844 120.910156 112.242188 118.40625 112.242188 118.40625 L 103.722656 103.652344 C 103.722656 103.652344 102.304688 101.792969 103.09375 99.332031 C 103.878906 96.878906 106.148438 95.773438 107.894531 95.808594 "/>
+<path fill="#0082CA" d="M 115.964844 124.792969 C 115.847656 124.59375 116.09375 124.378906 116.277344 124.519531 C 117.195312 125.21875 118.664062 125.902344 120.683594 125.515625 C 122.164062 125.210938 123.550781 124.296875 124.402344 122.757812 C 125.242188 121.300781 138.8125 97.8125 138.8125 97.8125 C 138.8125 97.8125 141.9375 90.917969 150.207031 90.550781 L 169.96875 90.550781 C 169.96875 90.550781 173 90.390625 174.503906 93.40625 C 175.921875 96.433594 173.941406 98.695312 173.667969 99.109375 C 173.394531 99.523438 142.203125 146.726562 142.203125 146.726562 C 142.203125 146.726562 140.003906 150.347656 135.40625 150.347656 C 130.808594 150.347656 128.707031 146.878906 128.417969 146.398438 C 128.175781 145.992188 118.835938 129.78125 115.964844 124.792969 "/></svg>微出国 · 学</a>
+  <nav><a href="../index.html">路线</a><a href="../slides.html">讲义</a><a href="../docs/" aria-current="page">讲解</a><a href="../drill.html">练习</a><a href="../exam.html">模考</a><a href="../progress.html">进度</a></nav>
+  <button class="theme" onclick="var r=document.documentElement,d=r.getAttribute('data-theme')==='dark';r.setAttribute('data-theme',d?'light':'dark');localStorage.setItem('vv-theme',d?'light':'dark')">◐</button>
+</header>
+<main><section class="sec">
+  <h1 style="font-size:var(--vv-fs-2xl);margin:0 0 8px">讲解 · 10 篇</h1>
+  <p class="sub">52,647 字。想不起来「共保在第几章」时，直接搜「共保」。<br>
+  先按标题与小标题匹配；<b>正文索引在你敲下第一个字时才加载</b>（约 360 KB，只下一次），
+  所以打开这一页仍然很快，而搜得到的东西是完整的。</p>
+  <input id="q" class="doc-search" type="search" placeholder="搜索：共保 / 法定条件 / UMP / statutory …"
+         autocomplete="off" spellcheck="false">
+  <p id="qn" class="sub" style="margin:10px 0 0"></p>
+  <div id="qr" class="doc-results"></div>
+</section>
+<script>
+const DOCS = [{"s": "index", "t": "2026 BC 驾照考试全景：从零到 Class 5 的完整路线", "sub": "", "b": "考照流程与制度", "w": 0, "tr": "guide", "h": ["一、先分岔：你走哪条路", "二、2026 年有三处变动，任何旧攻略都会说错", "三、笔试到底考什么", "四、路考考什么", "五、一共要花多少钱", "六、怎么用这个系列", "七、关于本系列的口径"], "c": 4117}, {"s": "glp-system", "t": "2026 BC 分级驾照体系 GLP：L → N → Full 到底怎么走", "sub": "", "b": "考照流程与制度", "w": 0, "tr": "guide", "h": ["一、原理与设计逻辑：为什么要分三级", "二、2026 现行实务：每一级的确切门槛", "三、现实案例：同样的规则，四个人走出四条路", "四、历史变迁：这套制度改了什么", "五、边学边测", "六、核心术语双语表", "七、来源清单"], "c": 5715}, {"s": "newcomer-exchange", "t": "2026 新移民换 BC 驾照：互认名单、90 天期限与驾龄豁免", "sub": "", "b": "考照流程与制度", "w": 0, "tr": "guide", "h": ["一、原理与设计逻辑：BC 到底在审什么", "二、2026 现行实务", "三、现实案例", "四、历史变迁", "五、边学边测", "六、核心术语双语表", "七、来源清单"], "c": 5195}, {"s": "knowledge-signs", "t": "2026 BC 笔试考点一：交通标志与信号灯", "sub": "", "b": "交通标志与信号灯", "w": 17, "tr": "guide", "h": ["一、原理与设计逻辑：形状定类别，颜色定语气", "二、2026 现行实务", "三、现实案例", "四、历史变迁", "五、边学边测", "六、核心术语双语表", "七、来源清单"], "c": 5283}, {"s": "knowledge-rules", "t": "2026 BC 笔试考点二：路权、让行与共享道路", "sub": "", "b": "路权、共享道路与驾驶态度", "w": 61, "tr": "guide", "h": ["一、原理与设计逻辑", "二、2026 现行实务", "三、现实案例", "四、历史变迁", "五、边学边测", "六、核心术语双语表", "七、来源清单"], "c": 6463}, {"s": "knowledge-speed-parking", "t": "2026 BC 笔试考点三：速度限制、跟车距离与停车泊车", "sub": "", "b": "速度、跟车与停车泊车", "w": 19, "tr": "guide", "h": ["一、原理与设计逻辑", "二、2026 现行实务", "三、现实案例", "四、历史变迁", "五、边学边测", "六、核心术语双语表", "七、来源清单"], "c": 5473}, {"s": "knowledge-alcohol-penalties", "t": "2026 BC 酒驾、扣分与罚则：一次违规到底要付多少", "sub": "", "b": "酒精、药物与罚则", "w": 3, "tr": "guide", "h": ["一、原理与设计逻辑", "二、2026 现行实务", "三、现实案例", "四、历史变迁", "五、边学边测", "六、核心术语双语表", "七、来源清单"], "c": 7240}, {"s": "road-test-class7", "t": "2026 BC Class 7 路考：流程、动作清单与评分方式", "sub": "", "b": "考照流程与制度", "w": 0, "tr": "guide", "h": ["一、原理与设计逻辑：考官在评什么", "二、2026 现行实务", "三、现实案例", "四、历史变迁", "五、边学边测", "六、核心术语双语表", "七、来源清单"], "c": 4562}, {"s": "road-test-class5", "t": "2026 BC Class 5 路考：为什么它就要消失了", "sub": "", "b": "考照流程与制度", "w": 0, "tr": "guide", "h": ["一、原理与设计逻辑：第二次路考在做什么，以及为什么可以不做", "二、2026-10-19 起：驾驶记录评估", "三、10 月 19 日之前：Class 5 路考现在是什么样", "四、历史变迁", "五、边学边测", "六、核心术语双语表", "七、来源清单"], "c": 3593}, {"s": "fail-points", "t": "2026 BC 路考常见挂点清单：为什么一半人第一次没过", "sub": "", "b": "考照流程与制度", "w": 0, "tr": "guide", "h": ["一、原理与设计逻辑：挂点的三种类型", "二、官方点名的挂点清单", "三、一个自查清单", "四、现实案例", "五、历史变迁", "六、边学边测", "七、核心术语双语表", "八、来源清单"], "c": 5006}];
+const qi = document.getElementById("q"), qr = document.getElementById("qr"), qn = document.getElementById("qn");
+const E = (x) => String(x).replace(/[&<>"]/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const TRACK = {foi:"FOI 教材", caib:"CAIB1 导读", quiz:"温习自测", kb:"制度事实", guide:"ICBC 指南"};
+let BODY = null, bodyState = "idle";
+async function loadBody() {
+  if (bodyState !== "idle") return;
+  bodyState = "loading"; qn.textContent = "正在载入正文索引…";
+  try {
+    const rows = await fetch("../assets/search-index.json").then((r) => r.json());
+    BODY = Object.fromEntries(rows.map((r) => [r.s, r.b.toLowerCase()]));
+    bodyState = "ready";
+  } catch (e) { bodyState = "failed"; }
+  draw();
+}
+function hit(d, q) {
+  if (!q) return {ok:true, why:""};
+  const inTitle = (d.t + d.sub).toLowerCase().includes(q);
+  const hs = d.h.filter((h) => h.toLowerCase().includes(q));
+  if (inTitle || hs.length || d.b.includes(q)) return {ok:true, why:hs.slice(0,3).join(" · ")};
+  // 正文命中：给一段上下文，让人不用点进去就知道是不是要找的那一处
+  const body = BODY && BODY[d.s];
+  if (body) {
+    const i = body.indexOf(q);
+    if (i >= 0) {
+      const from = Math.max(0, i - 24);
+      return {ok:true, why:"正文：…" + body.slice(from, i + q.length + 40).trim() + "…"};
+    }
+  }
+  return {ok:false};
+}
+function draw() {
+  const q = qi.value.trim().toLowerCase();
+  const rows = DOCS.map((d) => ({d, m:hit(d, q)})).filter((x) => x.m.ok);
+  if (q && bodyState === "idle") loadBody();
+  qn.textContent = q
+    ? `${rows.length} 篇命中` + (bodyState === "loading" ? "（正文索引载入中…）"
+        : bodyState === "failed" ? "（正文索引没载上，当前只搜了标题）" : "")
+    : "";
+  qr.innerHTML = rows.map(({d, m}) => `<a class="doc-row" href="${d.s}.html">
+    <span class="doc-row-b"><b>${E(d.t)}</b>
+      <span class="doc-row-m">${E(TRACK[d.tr]||d.tr)} · ${E(d.b)} 练习配比 ${d.w}% · ${d.c.toLocaleString()} 字</span>
+      ${m.why ? `<span class="doc-row-h">↳ ${E(m.why)}</span>` : ""}</span></a>`).join("")
+    || `<p class="sub">没找到「${E(q)}」${bodyState === "ready" ? "（标题与正文都搜过了）" : ""}。试试更短的词，或去<a href="../drill.html">练习</a>里搜题。</p>`;
+}
+qi.addEventListener("input", draw);
+qi.addEventListener("keydown", (e) => { if (e.key === "Escape") { qi.value = ""; draw(); } });
+draw();
+</script></main>
+<footer class="foot">
+  <p><b>微出国 · 学</b> — BC 驾照笔试（ICBC Class 7L 知识考）。<br>
+  内容是学习者视角的整理，不是 ICBC 官方教材；考试与路权规则以 ICBC 现行
+  《Learn to Drive Smart》与《机动车法》(Motor Vehicle Act) 为准。</p>
+</footer>
+<script>var UP_PATH="../";var BUILD_TIME="1789230898";</script>
+<script>
+if((localStorage.getItem('vv-theme')||'')==='dark')
+  document.documentElement.setAttribute('data-theme','dark');
+
+// 自动版本更新检测：对比 DOM 的 BUILD_TIME 与服务器最新 manifest.json，出现新版本时带时间戳无缝重载绕过 HTTP 磁盘缓存
+(function(){
+  function checkVersion(){
+    var up = typeof UP_PATH !== 'undefined' ? UP_PATH : '';
+    fetch(up + 'assets/manifest.json?t=' + Date.now(), { cache: 'no-store' }).then(function(r){
+      return r.ok ? r.json() : null;
+    }).then(function(m){
+      if(!m || !m.build_time) return;
+      var serverBuild = String(m.build_time);
+      var clientBuild = typeof BUILD_TIME !== 'undefined' ? String(BUILD_TIME) : '';
+      if(clientBuild && serverBuild && clientBuild !== serverBuild){
+        var reloaded = sessionStorage.getItem('vv_reloaded_build');
+        if(reloaded !== serverBuild){
+          sessionStorage.setItem('vv_reloaded_build', serverBuild);
+          var u = new URL(location.href);
+          u.searchParams.set('_v', serverBuild);
+          location.replace(u.href);
+        } else if(!document.getElementById('vv-update-banner')) {
+          var bar = document.createElement('div');
+          bar.id = 'vv-update-banner';
+          bar.className = 'vv-update-banner';
+          bar.innerHTML = '🎉 网站已更新到最新版本，建议按 <b>Ctrl+F5</b> (或 <b>Cmd+Shift+R</b>) 强制刷新页面。<button onclick="location.reload(true)">立即刷新</button>';
+          document.body.prepend(bar);
+        }
+      }
+    }).catch(function(){});
+  }
+
+  checkVersion();
+  document.addEventListener('visibilitychange', function(){
+    if(document.visibilityState === 'visible') checkVersion();
+  });
+  window.addEventListener('focus', checkVersion);
+  setInterval(checkVersion, 5 * 60 * 1000);
+})();
+
+// 页眉登录态。身份服务不在（纯静态托管、或还没起 dev-server）时静默跳过——
+// 内容页是公开的，永远不该因为身份服务缺席而坏掉。
+fetch('/api/me').then(function(r){return r.ok?r.json():null;}).then(function(m){
+  if(!m||document.getElementById('vv-auth'))return;
+  var n=document.querySelector('.vv-header nav');if(!n)return;
+  var e=document.createElement('span');e.id='vv-auth';e.className='auth';
+  e.innerHTML=m.loggedIn
+    ?'<span title="学习记录已跨设备同步">'+m.username+'</span> <a href="/auth/logout">退出</a>'
+    :'<a href="/auth/login?next='+encodeURIComponent(location.pathname)+'">登录</a>';
+  n.after(e);
+}).catch(function(){});
+
+// ── 阅读器增强：专注/最大化模式 & 键盘/手势切页 ──
+(function(){
+  var prevUrl = typeof PREV_URL !== 'undefined' ? PREV_URL : '';
+  var nextUrl = typeof NEXT_URL !== 'undefined' ? NEXT_URL : '';
+
+  function updateMaxBtns(isMax) {
+    var btns = document.querySelectorAll('.vv-reader-btn-max');
+    for(var i=0; i<btns.length; i++) {
+      btns[i].innerHTML = isMax ? '✕ 退出专注' : '⛶ 专注阅读';
+    }
+  }
+
+  window.toggleDocMaximize = function() {
+    var root = document.documentElement;
+    var isMax = root.classList.toggle('is-doc-maximized');
+    try { localStorage.setItem('vv_doc_maximized', isMax ? 'true' : 'false'); } catch(e){}
+    updateMaxBtns(isMax);
+  };
+
+  function updateAsideBtns(isCol) {
+    var btns = document.querySelectorAll('.vv-aside-btn');
+    for(var i=0; i<btns.length; i++) {
+      btns[i].innerHTML = isCol ? '◨ 展开侧栏' : '◧ 折叠侧栏';
+    }
+  }
+
+  window.toggleSidebarCollapse = function() {
+    var root = document.documentElement;
+    var isCol = root.classList.toggle('is-aside-collapsed');
+    try { localStorage.setItem('vv_aside_collapsed', isCol ? 'true' : 'false'); } catch(e){}
+    updateAsideBtns(isCol);
+  };
+
+  try {
+    if(localStorage.getItem('vv_aside_collapsed') === 'true') {
+      document.documentElement.classList.add('is-aside-collapsed');
+      setTimeout(function(){ updateAsideBtns(true); }, 0);
+    }
+  } catch(e){}
+
+  // 本页目录 <details> 状态记忆
+  var tocDet = document.querySelector('.doc-toc-details');
+  if(tocDet) {
+    try {
+      if(localStorage.getItem('vv_toc_open') === 'false') {
+        tocDet.removeAttribute('open');
+      }
+    } catch(e){}
+    tocDet.addEventListener('toggle', function() {
+      try { localStorage.setItem('vv_toc_open', tocDet.open ? 'true' : 'false'); } catch(e){}
+    });
+  }
+
+  document.addEventListener('keydown', function(e) {
+    var tag = (e.target && e.target.tagName) || '';
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' || e.target.isContentEditable) return;
+    if (e.key === 'ArrowLeft' && prevUrl) {
+      location.href = prevUrl;
+    } else if (e.key === 'ArrowRight' && nextUrl) {
+      location.href = nextUrl;
+    } else if (e.key === 'f' || e.key === 'F' || e.key === 'm' || e.key === 'M') {
+      toggleDocMaximize();
+    } else if (e.key === 'Escape' && document.documentElement.classList.contains('is-doc-maximized')) {
+      toggleDocMaximize();
+    }
+  });
+
+  var touchStartX = 0, touchStartY = 0;
+  document.addEventListener('touchstart', function(e) {
+    if (e.touches && e.touches.length === 1) {
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+    }
+  }, { passive: true });
+
+  document.addEventListener('touchend', function(e) {
+    if (!e.changedTouches || e.changedTouches.length !== 1) return;
+    var dx = e.changedTouches[0].clientX - touchStartX;
+    var dy = e.changedTouches[0].clientY - touchStartY;
+    if (Math.abs(dx) > 90 && Math.abs(dy) < 60) {
+      if (dx > 0 && prevUrl) {
+        location.href = prevUrl;
+      } else if (dx < 0 && nextUrl) {
+        location.href = nextUrl;
+      }
+    }
+  }, { passive: true });
+})();
+</script>
+<script>if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('../sw.js').catch(()=>{}))}</script>
+</body></html>
