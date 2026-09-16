@@ -333,7 +333,7 @@ function sourceLink(q) {
     if (has("guide-autoplan-basics")) return "docs/guide-autoplan-basics.html";
   }
   // 按模块 + 章号前缀反查（LLQP：`life-ch11-recommending` ← blueprint life / chapter ch11）。
-  // 不建 E311→life 这类映射表：那张表会与 course.json 分叉，而清册里已经有 module 字段了。
+  // 不建「模块代号→life」这类映射表：那张表会与 course.json 分叉，而清册里已经有 module 字段了。
   if (q.blueprint && /^ch[\d]+/.test(src.chapter || "")) {
     const pre = `${q.blueprint}-${src.chapter}`;
     const hit = MANIFEST.docs.find((d) => d.slug === pre || d.slug.startsWith(pre + "-"));
@@ -362,6 +362,8 @@ function renderPlan() {
   const root = document.getElementById("plan");
   const prefs = store.prefs();
   const daysLeft = Math.ceil((new Date(prefs.examDate) - new Date()) / 86400000);
+  // 自撰练习课（税务两课）没有考试：首页不许出现「N 天到考试」「考纲 N%」（2026-09-13 线上实见，默认考期 +93 天）
+  const selfPractice = MANIFEST.blueprint_policy?.kind === "self_authored_practice";
   const reviews = store.reviews();
   const attempts = store.attempts();
   const now = Date.now();
@@ -421,8 +423,8 @@ function renderPlan() {
       note: `已答 ${weakRate.n} 题，低于 ${passMark}% 及格线。这是目前最该补的板块。`,
       href: `drill.html?bp=${weakRate.bp}`, cta: "去练" });
   } else if (weakest && weakest.cover < 0.9) {
-    items.push({ icon: "＋", tone: "accent", title: `练 ${BP_LABEL(weakest.bp)}（考纲 ${weakest.w}%）`,
-      note: `这个板块你只碰过 ${weakest.seen}/${weakest.total} 题，是按考纲权重算缺口最大的一块。`,
+    items.push({ icon: "＋", tone: "accent", title: `练 ${BP_LABEL(weakest.bp)}（${selfPractice ? "练习配比" : "考纲"} ${weakest.w}%）`,
+      note: `这个板块你只碰过 ${weakest.seen}/${weakest.total} 题，是按${selfPractice ? "练习配比" : "考纲权重"}算缺口最大的一块。`,
       href: `drill.html?bp=${weakest.bp}`, cta: "去练" });
   }
   if (!items.length) {
@@ -435,7 +437,7 @@ function renderPlan() {
     <div class="plan-head">
       <div><h2>今天学什么</h2>
         <p class="sub">不用自己想 —— 按「先还债、再打地基、最后开新坑」排好了。</p></div>
-      <div class="plan-days"><b>${daysLeft > 0 ? daysLeft : 0}</b><span>天到考试</span></div>
+      ${selfPractice ? "" : `<div class="plan-days"><b>${daysLeft > 0 ? daysLeft : 0}</b><span>天到考试</span></div>`}
     </div>
     <div class="plan-list">
       ${items.slice(0, 3).map((it, i) => `
@@ -554,7 +556,7 @@ function renderDrill() {
         <span class="vv-badge vv-badge--accent">${esc(BP_LABEL(q.blueprint))}</span>
         <span class="vv-badge">${q.card_type === "except" ? "找例外" : q.card_type === "scenario" ? "情景" : q.card_type === "discriminate" ? "辨析" : "单选"}</span>
         <span class="vv-fact vv-fact--${q.fact_layer === "principle" ? "principle" : q.fact_layer === "current_number" ? "current" : "textbook"}">${
-          q.fact_layer === "principle" ? "原理层" : q.fact_layer === "current_number" ? "现行数字" : "教材数字"}</span>
+          q.fact_layer === "principle" ? "原理层" : q.fact_layer === "current_number" ? "现行数字" : "考试口径数字"}</span>
         <span class="q-pos">${idx + 1} / ${queue.length}</span>
       </div>
       <p class="q-stem">${rich(q.stem)}</p>
@@ -1137,7 +1139,7 @@ function renderProgress() {
 
     <section class="sec"><h2>${examMode() === "module" ? "模块" : "板块"}正确率 vs ${MANIFEST.blueprint_policy?.kind === "self_authored_practice" ? "练习配比" : "考纲权重"}</h2>
       <p class="sub">总分平均没有意义。term 90% + scenario 50% 与「平均 70%」在数学上一样，在考场上完全不同。</p>
-      <table class="cx"><tr><th>${examMode() === "module" ? "模块" : "板块"}</th><th class="n">考纲</th><th class="n">作答</th><th class="n">正确率</th><th>判断</th></tr>
+      <table class="cx"><tr><th>${examMode() === "module" ? "模块" : "板块"}</th><th class="n">${MANIFEST.blueprint_policy?.kind === "self_authored_practice" ? "配比" : "考纲"}</th><th class="n">作答</th><th class="n">正确率</th><th>判断</th></tr>
       ${Object.entries(WEIGHTS).map(([bp, w]) => {
         const s = bySec[bp];
         if (!s) return `<tr><td>${esc(BP_LABEL(bp))}</td><td class="n">${w}%</td><td class="n">0</td><td class="n">—</td><td>还没练过</td></tr>`;
