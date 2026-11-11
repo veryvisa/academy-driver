@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1232" width="900" height="1232" role="img" aria-labelledby="t d" font-family="'PingFang SC','Hiragino Sans GB','Noto Sans SC','Microsoft YaHei',sans-serif">
+<title id="t">晚饭两杯酒、没到醉驾线，被路边吹气会有什么后果？</title>
+<desc id="d">没到刑法醉驾线也有后果：BC 行政处罚门槛比刑法低，Warn 就可能当场禁驾，且不需要法院定罪。</desc>
+<rect width="900" height="1232" fill="#FAFBFC"/>
+<rect x="0" y="0" width="900" height="122" rx="0" fill="#12355B"/>
+<text x="40" y="46" font-size="18" fill="#BFD3E6" font-weight="500" text-anchor="start">路边吹气与即时禁驾 · 信息图</text>
+<text x="40" y="92" font-size="30" fill="#FFFFFF" font-weight="700" text-anchor="start">晚饭两杯酒、没到醉驾线，被路边吹气会有什么后果？</text>
+<rect x="40" y="146" width="820" height="132" rx="16" fill="#FFFFFF" stroke="#12355B" stroke-width="2"/>
+<text x="64" y="177" font-size="17" fill="#0E7C7B" font-weight="700" text-anchor="start">一句话答案</text>
+<text x="64" y="213" font-size="21" fill="#1F2A37" font-weight="600" text-anchor="start">没到刑法醉驾线也有后果：BC 行政处罚门槛比刑法低，Warn 就可能当场禁驾，</text>
+<text x="64" y="246" font-size="21" fill="#1F2A37" font-weight="600" text-anchor="start">且不需要法院定罪。</text>
+<rect x="40" y="304" width="820" height="160" rx="14" fill="#FFF4E5" stroke="#B45309" stroke-width="1.5"/>
+<text x="58" y="338" font-size="20" fill="#B45309" font-weight="700" text-anchor="start">Warn：血液酒精不低于 0.05</text>
+<circle cx="64" cy="367" r="3.2" fill="#B45309"/>
+<text x="76" y="372" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">警方可当场发出禁驾通知，即时生效</text>
+<circle cx="64" cy="398" r="3.2" fill="#B45309"/>
+<text x="76" y="404" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">按五年内次数分别禁驾 3 天、7 天、30 天</text>
+<circle cx="64" cy="430" r="3.2" fill="#B45309"/>
+<text x="76" y="435" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">30 天禁驾要扣车 30 天</text>
+<line x1="450" y1="466" x2="450" y2="494" stroke="#5B6B7F" stroke-width="2.5"/>
+<path d="M442,490 L458,490 L450,502 Z" fill="#5B6B7F"/>
+<text x="466" y="486" font-size="15" fill="#5B6B7F" font-weight="500" text-anchor="start">读数更高</text>
+<rect x="40" y="504" width="820" height="160" rx="14" fill="#FDECEA" stroke="#B42318" stroke-width="1.5"/>
+<text x="58" y="538" font-size="20" fill="#B42318" font-weight="700" text-anchor="start">Fail：不低于 0.08 或拒吹</text>
+<circle cx="64" cy="568" r="3.2" fill="#B42318"/>
+<text x="76" y="572" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">禁驾 90 天，扣车 30 天</text>
+<circle cx="64" cy="599" r="3.2" fill="#B42318"/>
+<text x="76" y="604" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">另有行政罚款、复牌费与拖车保管费</text>
+<circle cx="64" cy="630" r="3.2" fill="#B42318"/>
+<text x="76" y="636" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">拒绝提供呼气样本与 Fail 同列，罚则同档</text>
+<line x1="450" y1="667" x2="450" y2="694" stroke="#5B6B7F" stroke-width="2.5"/>
+<path d="M442,691 L458,691 L450,703 Z" fill="#5B6B7F"/>
+<text x="466" y="686" font-size="15" fill="#5B6B7F" font-weight="500" text-anchor="start">行政之外另有刑事</text>
+<rect x="40" y="705" width="820" height="160" rx="14" fill="#EAF1F8" stroke="#2F5D8A" stroke-width="1.5"/>
+<text x="58" y="739" font-size="20" fill="#2F5D8A" font-weight="700" text-anchor="start">行政与刑事可并存</text>
+<circle cx="64" cy="768" r="3.2" fill="#2F5D8A"/>
+<text x="76" y="773" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">行政处罚不需要法院定罪</text>
+<circle cx="64" cy="800" r="3.2" fill="#2F5D8A"/>
+<text x="76" y="804" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">Fail 时警方也可另以刑法醉驾起诉</text>
+<circle cx="64" cy="831" r="3.2" fill="#2F5D8A"/>
+<text x="76" y="836" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">无合理理由拒从刑法检测要求，警方还可另以刑事罪起诉</text>
+<rect x="40" y="888" width="820" height="154" rx="14" fill="#FFF4E5" stroke="#B45309" stroke-width="1.5"/>
+<text x="58" y="922" font-size="20" fill="#B45309" font-weight="700" text-anchor="start">最容易弄错</text>
+<circle cx="64" cy="950" r="3.2" fill="#B45309"/>
+<text x="76" y="956" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">「没到刑法的醉驾线就没事。」：BC 行政处罚门槛比刑法低，Warn 就可当场发禁驾通知。</text>
+<circle cx="64" cy="982" r="3.2" fill="#B45309"/>
+<text x="76" y="987" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">「拒绝吹气总比吹出 FAIL 好。」：拒吹并不更轻，与 Fail 同列，都是 90 天禁驾、扣车 30 </text>
+<text x="76" y="1012" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">天。</text>
+<line x1="40" y1="1068" x2="860" y2="1068" stroke="#D5DEE8" stroke-width="1.5"/>
+<text x="40" y="1093" font-size="15" fill="#5B6B7F" font-weight="700" text-anchor="start">来源</text>
+<text x="40" y="1115" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">Learn to Drive Smart: signs, markings and crossing safety</text>
+<text x="40" y="1137" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">Alcohol and drug related driving prohibitions and suspensions</text>
+<text x="40" y="1160" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">The Vehicle Impoundment Program</text>
+<text x="40" y="1188" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">2026-11-09 依据讲解页与已核规则摘要制作；个案以官方原文与主管机构答复为准。</text>
+</svg>

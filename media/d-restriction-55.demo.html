@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>限制 55 演示</title>
+<meta name="description" content="选升级方式和期间发生的事，看驾照有没有限制 55、什么时候自动解除、被禁驾后从哪天重新计 12 个月。">
+<style>
+:root{--bg:#ffffff;--ink:#1b2430;--muted:#5d6b7b;--line:#e3e8ef;--raised:#f6f8fb;--acc:#0b5fff;--ok:#1a7f4b;--okbg:#e9f7ef;--warn:#b54708;--warnbg:#fff3e6;--bad:#b42318;--badbg:#fdecea}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1419;--ink:#e6ebf2;--muted:#9aa7b5;--line:#2a3340;--raised:#171d25;--acc:#6ea8ff;--ok:#5fd39a;--okbg:#122a1d;--warn:#ffb86b;--warnbg:#2d1f0f;--bad:#ff8a80;--badbg:#2d1414}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 16px 48px}
+h1{font-size:1.45rem;line-height:1.35;margin:0 0 6px}
+h2{font-size:1.1rem;margin:28px 0 10px;padding-top:14px;border-top:1px solid var(--line)}
+.sub{color:var(--muted);margin:0 0 16px}
+.answer{background:var(--raised);border-left:4px solid var(--acc);padding:12px 14px;border-radius:8px;margin:14px 0}
+.answer b{display:block;margin-bottom:4px}
+label.f{display:block;margin:10px 0}
+label.f span{display:block;font-weight:600}
+label.f small{display:block;color:var(--muted)}
+input[type=number],input[type=date],select{font:inherit;width:220px;max-width:100%;padding:6px 8px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+fieldset{border:1px solid var(--line);border-radius:10px;margin:12px 0;padding:8px 14px}
+legend{font-weight:600;padding:0 6px}
+label.c{display:block;margin:6px 0}
+.result{border-radius:10px;padding:12px 14px;margin:14px 0;border:1px solid var(--line);background:var(--raised)}
+.result.warn{background:var(--warnbg);border-color:var(--warn)}
+.result.ok{background:var(--okbg);border-color:var(--ok)}
+.result.bad{background:var(--badbg);border-color:var(--bad)}
+table{border-collapse:collapse;width:100%;font-size:.93rem;margin:10px 0}
+th,td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+th{background:var(--raised)}
+.wrap{overflow-x:auto}
+.pit{margin:0;padding-left:1.2em}
+.pit li{margin:6px 0}
+.foot{margin-top:28px;padding-top:12px;border-top:1px dashed var(--line);font-size:.86rem;color:var(--muted)}
+.foot a{color:var(--acc);overflow-wrap:anywhere}
+</style>
+<!-- vf:start --><meta name="vf-version" content="2026.09.30.2"><link rel="stylesheet" href="../vf/framework.css"><style>body[data-vf-site]{--vf-accent:#315c7e;--vf-paper:#f2f7fb;--vf-heading:"PingFang SC", sans-serif;--vf-radius:8px;}</style><script defer src="../vf/framework.js"></script><!-- vf:end --><link rel="manifest" href="../manifest.webmanifest">
+</head>
+<body data-vf-site="bc-driver"><!-- vf:start --><nav class="vf-network" aria-label="微出国跨站导航" data-pagefind-ignore><a class="vf-wordmark" href="https://veryvisa.github.io/">微出国<span> / VERYVISA</span></a><span class="vf-network-label">BC 驾驶学习</span><a href="../workspace/index.html">我的清单</a><a href="https://veryvisa.github.io/#professional">专业人员入口</a></nav><!-- vf:end -->
+<main>
+<h1>升到 Class 5 以后驾照上的「限制 55」管什么，被禁驾了会怎样？</h1>
+<p class="sub">限制 55 · 选升级方式与事件 · BC 现行规则</p>
+<div class="answer"><b>经驾驶记录评估或 2026 年 10 月 19 日自动升级拿到的 Class 5 带限制 55：开车时零血液酒精、零血液药物。</b>12 个月后自动解除，到期日印在驾照背面；到期前被禁驾或吊销，12 个月从恢复驾照之日重新计算。</div>
+
+<h2>没有脚本时：对照表</h2>
+<div class="wrap"><table>
+<thead><tr><th>怎么拿到的 Class 5</th><th>有没有限制 55</th><th>何时解除</th></tr></thead>
+<tbody>
+<tr><td>驾驶记录评估（Driving Record Assessment）</td><td>有</td><td>升级日起 12 个月，自动解除</td></tr>
+<tr><td>收到 ICBC 确认信，2026-10-19 一次性自动升级</td><td>有</td><td>2027-10-19 前后，以驾照背面日期为准</td></tr>
+<tr><td>2026-10-19 之前考过第二次路考拿到</td><td>一般没有（限制 55 是这次改制随新升级方式加上的）</td><td>以驾照背面为准</td></tr>
+<tr><td>2026-10-19 之后因迁入、驾照过期超过三年或复考而考路考拿到</td><td>判不了：ICBC 这三页没写</td><td>看驾照背面或问 ICBC</td></tr>
+</tbody>
+</table></div>
+<ol class="pit">
+<li>限制期内被禁驾（prohibition）或吊销（suspension）：12 个月从恢复驾照之日重新计算。</li>
+<li>路边因酒精或药物被处罚，算不算会重计的禁驾，ICBC 这三页没写，以处罚通知为准。</li>
+<li>带限制 55 的人不能给 N 牌驾驶者当监督人：监督人的 Class 5 必须不带这项限制。</li>
+</ol>
+
+<form id="f" novalidate>
+<h2>算一算</h2>
+<label class="f"><span>怎么拿到的 Class 5</span><select id="how"><option value="dra">驾驶记录评估</option><option value="auto">10 月 19 日自动升级（收到确认信）</option><option value="road_before">10 月 19 日之前考路考拿到</option><option value="road_after">10 月 19 日之后考路考拿到</option></select></label>
+<label class="f"><span>升级日期</span><small>自动升级固定为 2026-10-19，这一栏可不填。</small><input type="date" id="up" value="2026-11-06"></label>
+<label class="f"><span>升级后发生过什么</span><select id="ev"><option value="none">什么都没有</option><option value="prohib">被禁驾或吊销</option><option value="roadside">路边因酒精或药物被处罚，不确定算不算禁驾</option></select></label>
+<label class="f"><span>被禁驾或吊销的日期</span><input type="date" id="evd" value=""></label>
+<label class="f"><span>恢复驾照的日期</span><small>还没恢复就留空。</small><input type="date" id="red" value=""></label>
+<div id="out" class="result" aria-live="polite"><p>启用脚本后这里显示结果；未启用时请看上面的表。</p></div>
+</form>
+
+<div class="foot">
+<p>不收集姓名、驾照号等个人资料，只按你选的情形推算日期；月份按日历月加，遇到月底取当月最后一天。驾照背面印的到期日与 ICBC 驾驶记录为准，本页不作个案结论。</p>
+<p>来源：<a href="https://www.icbc.com/driver-licensing/new-drivers/you-have-a-class-7-licence-and-youre-under-25">You have a Class 7 licence and you're under 25</a>；<a href="https://www.icbc.com/driver-licensing/new-drivers/you-may-be-eligible-for-an-automatic-upgrade">You may be eligible for an automatic upgrade</a>；<a href="https://www.icbc.com/driver-licensing/new-drivers/you-hold-a-class-7-licence-and-youre-25-or-older">You hold a Class 7 licence and you're 25 or older</a>。2026-11-06 回读。</p>
+</div>
+<!-- vf:start --><div class="vf-tools" role="group" data-pagefind-ignore aria-label="阅读工具"><button type="button" data-vf-save hidden>保存本页</button><button type="button" data-vf-print hidden>打印 / 存为 PDF</button><span data-vf-status role="status" aria-live="polite"></span></div><!-- vf:end --></main>
+<script>
+function dim(y,m){return new Date(Date.UTC(y,m,0)).getUTCDate()}
+function pd(s){var m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(s||'');if(!m)return null;var y=+m[1],mo=+m[2],d=+m[3];if(mo<1||mo>12||d<1||d>dim(y,mo))return null;return{y:y,m:mo,d:d}}
+function addM(p,n){var t=p.y*12+(p.m-1)+n,y=Math.floor(t/12),m=t%12+1;return{y:y,m:m,d:Math.min(p.d,dim(y,m))}}
+function fmt(p){return p.y+'-'+String(p.m).padStart(2,'0')+'-'+String(p.d).padStart(2,'0')}
+function days(a,b){return Math.round((Date.UTC(b.y,b.m-1,b.d)-Date.UTC(a.y,a.m-1,a.d))/864e5)}
+var START={y:2026,m:10,d:19};
+function calc(i){
+  var t=pd(i.today),rows=[],notes=['限制期内开车：血液酒精、血液药物都必须为零。','带限制 55 不能给 N 牌驾驶者当监督人。'];
+  if(i.how==='road_before')return{state:'ok',r55:'no',head:'一般没有限制 55：它是 10 月 19 日改制随驾驶记录评估与自动升级加上的。',rows:[],notes:['以驾照背面为准；背面印着限制 55 就按下面两种方式算。']};
+  if(i.how==='road_after')return{state:'unclear',r55:'unclear',head:'判不了：10 月 19 日之后考路考拿到的 Class 5 带不带限制 55，ICBC 这三页没写。',rows:[],notes:['看驾照背面有没有限制 55 与到期日，或问 ICBC 驾照办事处。']};
+  if(i.how!=='dra'&&i.how!=='auto')return{state:'invalid',head:'请选怎么拿到的 Class 5。',rows:[],notes:[]};
+  var u=i.how==='auto'?START:pd(i.up);
+  if(!u)return{state:'invalid',head:'请填升级日期。',rows:[],notes:[]};
+  if(i.how==='dra'&&days(START,u)<0)return{state:'invalid',head:'驾驶记录评估从 2026-10-19 起才有，升级日期请核对。',rows:[],notes:[]};
+  if(t&&days(u,t)<0)return{state:'invalid',head:'升级日期晚于今天，请核对。',rows:[],notes:[]};
+  var exp=addM(u,12);
+  rows.push(['升级日',fmt(u)]);rows.push(['原定解除日',fmt(exp)]);
+  if(i.how==='auto')notes.push('自动升级以驾照背面印的到期日为准。');
+  if(i.ev==='roadside'){notes.unshift('路边处罚属于哪一类、会不会记成禁驾，看处罚通知或问 ICBC；算禁驾的，就按「被禁驾或吊销」重算。');return{state:'unclear',r55:'yes',head:'判不了：这次路边处罚算不算会重计的禁驾，ICBC 这三页没写。',rows:rows,notes:notes}}
+  if(i.ev==='prohib'){
+    var e=pd(i.evd),r=pd(i.red);
+    if(!e)return{state:'invalid',head:'请填被禁驾或吊销的日期。',rows:rows,notes:[]};
+    if(days(u,e)<0)return{state:'invalid',head:'禁驾日期早于升级日，请核对。',rows:rows,notes:[]};
+    if(days(exp,e)>=0){notes.unshift('官方只写到期前被禁驾或吊销才重算；这次在原定解除日之后，限制 55 不因此重算，禁驾本身的后果照旧。');return{state:'ok',r55:'lifted',head:'限制 55 已于 '+fmt(exp)+' 自动解除，这次禁驾不重算它。',rows:rows,notes:notes}}
+    rows.push(['禁驾或吊销',fmt(e)]);
+    if(!r)return{state:'unclear',r55:'yes',head:'恢复驾照后重新计 12 个月；恢复日还不知道，算不出新的解除日。',rows:rows,notes:notes};
+    if(days(e,r)<0)return{state:'invalid',head:'恢复日期早于禁驾日期，请核对。',rows:rows,notes:[]};
+    var ne=addM(r,12);rows.push(['恢复驾照',fmt(r)]);rows.push(['新的解除日',fmt(ne)]);
+    return{state:'date',r55:'restart',head:'重新计算：限制 55 到 '+fmt(ne)+' 才解除（恢复驾照之日起 12 个月）。',rows:rows,notes:notes,expiry:fmt(ne)};
+  }
+  if(t&&days(exp,t)>=0)return{state:'ok',r55:'lifted',head:'限制 55 已于 '+fmt(exp)+' 自动解除，不用另办手续、不用换卡。',rows:rows,notes:['解除前的期间里被禁驾或吊销的，要按恢复日重算。'],expiry:fmt(exp)};
+  return{state:'date',r55:'yes',head:'带限制 55，到 '+fmt(exp)+' 自动解除。',rows:rows,notes:notes,expiry:fmt(exp)};
+}
+
+(function(){
+  var out=document.getElementById('out'),ids=["how", "up", "ev", "evd", "red"];
+  function $(k){return document.getElementById(k)}
+  function esc(s){return String(s).replace(/[&<>]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;'}[c]})}
+  function upd(){
+    var v={};ids.forEach(function(k){var e=$(k);v[k]=e.type==='checkbox'?e.checked:e.value});
+    if(!v.today){var t=new Date();v.today=t.getFullYear()+'-'+String(t.getMonth()+1).padStart(2,'0')+'-'+String(t.getDate()).padStart(2,'0')}
+    var r=calc(v);
+    out.className='result '+({date:'ok',ok:'ok',unclear:'warn',invalid:'warn'}[r.state]||'');
+    var h='<p><b>'+esc(r.head)+'</b></p>';
+    if(r.rows&&r.rows.length){h+='<div class="wrap"><table><tbody>'+r.rows.map(function(x){return '<tr><td>'+esc(x[0])+'</td><td>'+esc(x[1])+'</td></tr>'}).join('')+'</tbody></table></div>'}
+    if(r.notes&&r.notes.length){h+='<ul class="pit">'+r.notes.map(function(x){return '<li>'+esc(x)+'</li>'}).join('')+'</ul>'}
+    out.innerHTML=h;
+  }
+  ids.forEach(function(k){var e=$(k);if(e){e.addEventListener('input',upd);e.addEventListener('change',upd)}});
+  upd();
+})();
+</script>
+<script>if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('../sw.js').catch(()=>{}))}</script>
+</body>
+</html>

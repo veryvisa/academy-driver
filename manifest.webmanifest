@@ -1,0 +1,11 @@
+{
+ "name": "微出国·学 · BC 驾照（ICBC）",
+ "short_name": "BC 驾照（ICBC）",
+ "start_url": "./index.html",
+ "scope": "./",
+ "display": "standalone",
+ "background_color": "#ffffff",
+ "theme_color": "#0f172a",
+ "lang": "zh-CN",
+ "icons": []
+}
